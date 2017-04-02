@@ -1,0 +1,78 @@
+#startstoptimer:first-letter {
+    text-transform:capitalize;
+}
+
+/* Timer background colors be here*/
+#timer_container {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+
+  background-color: black;
+  min-height: 100px;
+}
+
+/* Timer Text fonts and colors be here*/
+#timer{
+  margin-left: 10px;
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+}
+
+/* Timer animation fonts and colors be here*/
+#timer_animation{
+  font-size: 3em;
+  line-height: 1;
+  color: white;
+}
+
+.anim-digit {
+  position: relative;
+  top: 14px;
+  display: table-cell;
+  opacity: 0;
+}
+
+.digit-single {
+  margin-left: 48px;
+}
+
+.digit-double {
+  margin-left: 25px;
+}
+
+body {
+    overflow:hidden;
+}
+
+/* MATERIAL OVERRIDE */
+/* label color */
+.input-field label {
+  color: #b2dfdb;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #b2dfdb;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #b2dfdb;
+  box-shadow: 0 1px 0 0 #b2dfdb;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #b2dfdb;
+  box-shadow: 0 1px 0 0 #b2dfdb;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #b2dfdb;
+  box-shadow: 0 1px 0 0 #b2dfdb;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #b2dfdb;
+}
+

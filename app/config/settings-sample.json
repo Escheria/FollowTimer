@@ -1,0 +1,22 @@
+{
+	"developer": false,
+	"logging": false,
+	"defaults": {
+		"hoursStart": 0,
+		"minutesStart": 0,
+		"secondsStart": 0,
+
+		"hourIncrement": 0,
+		"minutesIncrement": 1,
+		"secondsIncrement": 0,
+
+		"windowHeight": 390,
+		"windowWidth": 325
+	},
+
+	"twitch": {
+		"channel": "twitch",
+		"clientID": "TwitchClientID",
+		"pollingInterval": 15000
+	}
+}

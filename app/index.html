@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="timer_container" class="row">
+        <div id="timer_animation">
+          <div class="anim-digit"><span id="hours_animation" class="digit-single">+3</span></div>
+          <div class="anim-digit"><span id="minutes_animation" class="digit-double">+10</span></div>
+          <div class="anim-digit"><span id="seconds_animation" class="digit-single">+1</span></div>
+        </div>
+        <div id="timer">
+          <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+      </div>
+
+      <div id="timer_controls">
+
+        <div id="timer_input" class="row">
+          <div class="input-field col s4">
+            <input id="hours_input" type="text" class="validate text-lighten-5">
+            <label for="hours_input">Hours</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="minutes_input" type="text" class="validate">
+            <label for="minutes_input">Minutes</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="seconds_input" type="text" class="validate">
+            <label for="seconds_input">Seconds</label>
+          </div>
+        </div>
+
+        <div class="row">
+            <a id="resettime" class="waves-effect waves-light btn col s6">Reset Time</a>
+            <a id="addtime" class="waves-effect waves-light btn col s6">Add Time</a>
+        </div>
+
+        <div class="row">
+            <a id="startstoptimer" class="waves-effect waves-light btn col s12">Start</a>
+        </div>        
+      </div>
+
+    </div>
+  </body>
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+  <script>
+    // You can also require other files to run in this process
+    //require('./js/renderer.js')
+    require('./js/timer.js')
+    require('./js/twitch.js')
+    //materialize dependencies
+    //require('../node_modules/hammerjs/hammer.min.js')
+    require('../node_modules/pickadate/lib/picker.js')
+    //require('../node_modules/materialize-css/bin/jquery-2.1.1.min.js')
+    require('../node_modules/materialize-css/bin/materialize.js')
+  </script>
+</html>
